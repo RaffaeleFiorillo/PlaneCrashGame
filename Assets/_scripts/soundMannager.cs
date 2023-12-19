@@ -7,7 +7,8 @@ public class soundMannager : MonoBehaviour
 {
 
 
-    [SerializeField] List<scriptableSound> sounds = new List<scriptableSound>();
+    [SerializeField] scriptableSound firstScriptableSound;
+    scriptableSound nextSound;
     int nextAudio;
 
 
@@ -19,12 +20,47 @@ public class soundMannager : MonoBehaviour
     private void Start()
     {
         soundSource = GetComponent<AudioSource>();
+        nextSound = firstScriptableSound;
 
+        soundSource.resource = nextSound.audio;
+        soundSource.Play();
 
 
     }
 
-    
+
+    public void playSound()
+    {
+
+        soundSource.Play();
+
+       
+
+
+    }
+    public void endSound()
+    {
+
+
+        soundSource.Stop();
+    }
+
+
+    public void nextVariant(int variant)
+    {
+
+
+
+        if (!soundSource.isPlaying)
+        {
+            nextSound = nextSound.variants[variant];
+
+            soundSource.resource = nextSound.audio;
+
+
+
+        }
+    }
     
 
 

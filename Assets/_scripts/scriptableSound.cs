@@ -8,9 +8,9 @@ using UnityEngine.Audio;
 public class scriptableSound : ScriptableObject
 {
 
-    [SerializeField] AudioResource audio;
+    [SerializeField] public AudioResource audio;
 
-
+    [SerializeField]public List<scriptableSound> variants = new List<scriptableSound>();
 
 
 }
