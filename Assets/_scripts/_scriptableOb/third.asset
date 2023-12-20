@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
-  m_Name: second
+  m_Name: third
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: b228f3951fea0af418c2b333e3c7707a, type: 3}
+  audio: {fileID: 8300000, guid: 6f04e0ea610736c429916c732ad39829, type: 3}
   notFollowAudio: {fileID: 8300000, guid: 75710cd20602d1a44afdbba9c03254f0, type: 3}
   noEvent: 0
-  nextEvent: 0
-  timing: 4
+  nextEvent: 1
+  timing: 5
   variants:
-  - {fileID: 11400000, guid: 6ccdc91a0ce14a44296930bd4cbfc713, type: 2}
-  - {fileID: 11400000, guid: 9391151fbc1bbc7439c353e9f6edff9f, type: 2}
+  - {fileID: 11400000, guid: c2e9f2366b0d03949be4d2943ee3d7be, type: 2}
+  - {fileID: 11400000, guid: 39237e8fb31a7ab4ca68bb5fc8f892c5, type: 2}
