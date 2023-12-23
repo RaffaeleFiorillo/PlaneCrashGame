@@ -42,7 +42,7 @@ public class soundMannager : MonoBehaviour
         nextSound = firstScriptableSound;
 
         soundSource.resource = nextSound.audio;
-        soundSource.Play()
+        soundSource.Play();
     }
 
 
@@ -91,72 +91,79 @@ public class soundMannager : MonoBehaviour
 
     public void passToNext()
     {
-        if (soundSource.isPlaying && !nextSound.noEvent) return null;
+        if (!soundSource.isPlaying && nextSound.noEvent)
+        {
+            nextSound = nextSound.variants[0];
+            soundSource.resource = nextSound.audio;
 
-        nextSound = nextSound.variants[0];
-        soundSource.resource = nextSound.audio;
+            playSound();
 
-        playSound();
-
-        if (!nextSound.noEvent)
-            eventMannager.instance.activation(nextSound);
+            if (!nextSound.noEvent)
+                eventMannager.instance.activation(nextSound);
         }
     }
 
 
     public void nextVariant(int variant)
     {
-        if (soundSource.isPlaying) return null;
-
-        nextSound = nextSound.variants[variant];
-        soundSource.resource = nextSound.audio;
-
-        timer = soundSource.time;
-        Debug.Log("received");
-
-        playSound();
-
-        if (!nextSound.noEvent)
+        if (!soundSource.isPlaying) 
         {
-            eventMannager.instance.activation(nextSound);
-            Debug.Log("variating");
+            if (variant < nextSound.variants.Count) 
+            { 
+                nextSound = nextSound.variants[variant]; 
+            }
+            
+            soundSource.resource = nextSound.audio;
+
+            timer = soundSource.time;
+            Debug.Log("received");
+
+            playSound();
+
+            if (!nextSound.noEvent)
+            {
+                eventMannager.instance.activation(nextSound);
+                Debug.Log("variating");
+            }
         }
     }
 
 
     public void eyesOpen()
     {
-        if (areOpened) return null;
+        if (!areOpened)
+        {
+            areOpened = true;
+            soundSource.Stop();
 
-        areOpened = true;
-        soundSource.Stop();
+            soundSource.resource = nextSound.notFollowAudio;
 
-        soundSource.resource = nextSound.notFollowAudio;
+            soundSource.Play();
 
-        soundSource.Play();
-
-        eventMannager.instance.deactivate(nextSound);
+            eventMannager.instance.deactivate(nextSound);
+        }
     }
 
 
     public void eyesShut()
     {
-        if (!areOpened) return null;
-
-        areOpened = false;
-        soundSource.Stop();
-
-        nextSound = nextSound.variants[0];
-
-        soundSource.resource = nextSound.audio;
-
-        if (!nextSound.noEvent)
+        if (areOpened)
         {
-            eventMannager.instance.activation(nextSound);
-            Debug.Log("variating");
-        }
+            areOpened = false;
+            soundSource.Stop();
 
-        soundSource.Play();
+            nextSound = nextSound.variants[0];
+
+            soundSource.resource = nextSound.audio;
+
+            if (!nextSound.noEvent)
+            {
+                eventMannager.instance.activation(nextSound);
+                Debug.Log("variating");
+            }
+
+            soundSource.Play();
+        }
     }
 
 

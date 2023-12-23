@@ -53,7 +53,7 @@ public class twoButtonEvent : MonoBehaviour
     {
         if ( leftB && rightB && timePressing > 0)
         {
-             imePressing -= pressingSpeed * Time.deltaTime;
+             timePressing -= pressingSpeed * Time.deltaTime;
         }
 
         timer -=Time.deltaTime;

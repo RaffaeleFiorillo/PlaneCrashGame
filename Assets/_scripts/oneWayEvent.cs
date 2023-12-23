@@ -63,7 +63,7 @@ public class oneWayEvent : MonoBehaviour
 
         if (timer > 0)
         {
-            int direction = leftInp ? -1 : 0 + rightInp ? 1 : 0;
+            int direction = (leftInp ? -1 : 0) + (rightInp ? 1 : 0);
             eixo += speed*Time.deltaTime*direction;
         }
         else if (timer <= 0)

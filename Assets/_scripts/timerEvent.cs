@@ -22,11 +22,12 @@ public class timerEvent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activeBool) return null;
-
-        active();
-        // Debug.Log(timer);
-        receiveInput();
+        if (!activeBool)
+        {
+            active();
+            // Debug.Log(timer);
+            receiveInput();
+        }
     }
 
 
