@@ -4,20 +4,10 @@ using UnityEngine;
 
 namespace evenEnum
 {
-
-
     public enum theEnum
     {
         timer,
        twoButtonEven,
         outro2
-
-
-
-
-
     }
-
-
-
 }
