@@ -132,6 +132,8 @@ GameObject:
   - component: {fileID: 249532113}
   - component: {fileID: 249532112}
   - component: {fileID: 249532114}
+  - component: {fileID: 249532115}
+  - component: {fileID: 249532116}
   m_Layer: 0
   m_Name: in puta
   m_TagString: Untagged
@@ -204,6 +206,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timePressing: 10
   pressingSpeed: 2
+--- !u!114 &249532115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249532109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaee3eca32584fa4cbdcb52d721b13d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eixo: 0
+  eixoLength: 100
+  speed: 20
+--- !u!114 &249532116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249532109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dadc64e42cd05b1408aef9a46debf123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eixo: 0
+  eixoLength: 100
+  speed: 20
 --- !u!1 &429909653
 GameObject:
   m_ObjectHideFlags: 0

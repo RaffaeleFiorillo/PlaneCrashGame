@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Audio;
 using evenEnum;
+using System.Diagnostics.Tracing;
 
 [CreateAssetMenu(fileName = "SoundInfo")]
 public class scriptableSound : ScriptableObject
@@ -20,6 +21,12 @@ public class scriptableSound : ScriptableObject
     [Header("If Event")]
     public bool noEvent;
    public theEnum nextEvent;
+
+    [Header("Evento especifico")]
+    [Range(-1,1)] public int direcao;
+
+
+
 
     [Space]
     [SerializeField]public List<scriptableSound> variants = new List<scriptableSound>();

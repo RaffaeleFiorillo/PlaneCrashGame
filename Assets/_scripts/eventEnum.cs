@@ -10,7 +10,8 @@ namespace evenEnum
     {
         timer,
        twoButtonEven,
-        outro2
+        eachSideBEvent,
+        oneWayBEvent
 
 
 
