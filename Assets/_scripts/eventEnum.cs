@@ -7,7 +7,8 @@ namespace evenEnum
     public enum theEnum
     {
         timer,
-       twoButtonEven,
-        outro2
+        twoButtonEven,
+        eachSideBEvent,
+        oneWayBEvent
     }
 }

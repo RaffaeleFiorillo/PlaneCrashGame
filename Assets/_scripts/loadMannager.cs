@@ -5,13 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class loadMannager : MonoBehaviour
 {
-    
-
     public void loadScene(string sceneName)
     {
-
-
         SceneManager.LoadScene(sceneName);
-
     }
 }
