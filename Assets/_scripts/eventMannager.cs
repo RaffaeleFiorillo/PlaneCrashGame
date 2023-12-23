@@ -10,11 +10,15 @@ public class eventMannager : MonoBehaviour
     
     timerEvent timerE;
     twoButtonEvent twoButtonEv;
+    eachSideEvent eachSideEv;
+    oneWayEvent oneWayEv;
     void Start()
     {
         instance = this;
         timerE = GetComponent<timerEvent>();
         twoButtonEv = GetComponent<twoButtonEvent>();
+        eachSideEv = GetComponent<eachSideEvent>();
+        oneWayEv = GetComponent<oneWayEvent>();
     }
 
     // Update is called once per frame
@@ -50,6 +54,19 @@ public class eventMannager : MonoBehaviour
 
                 break;
 
+            case theEnum.eachSideBEvent:
+
+                eachSideEv.receiver(theSound);
+
+                break;
+
+            case theEnum.oneWayBEvent:
+                oneWayEv.receiver(theSound);
+                break;
+
+
+
+
         }
 
 
@@ -72,7 +89,15 @@ public class eventMannager : MonoBehaviour
 
                 twoButtonEv.deactivate();
                 break;
+            case theEnum.eachSideBEvent:
+                eachSideEv.deactivate();
 
+                break;
+            case theEnum.oneWayBEvent:
+
+
+                oneWayEv.deactivate();
+                break;
 
 
         }
