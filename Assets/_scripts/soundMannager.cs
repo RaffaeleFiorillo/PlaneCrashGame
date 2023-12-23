@@ -96,8 +96,8 @@ public class soundMannager : MonoBehaviour
             nextSound = nextSound.variants[0];
             soundSource.resource = nextSound.audio;
 
+            Debug.Log("calling");
             playSound();
-
             if (!nextSound.noEvent)
                 eventMannager.instance.activation(nextSound);
         }
@@ -108,10 +108,9 @@ public class soundMannager : MonoBehaviour
     {
         if (!soundSource.isPlaying) 
         {
-            if (variant < nextSound.variants.Count) 
-            { 
+            
                 nextSound = nextSound.variants[variant]; 
-            }
+            
             
             soundSource.resource = nextSound.audio;
 
