@@ -1,0 +1,4 @@
+Name: Episode1
+InputSetupType: TwoButtons
+AudioNames: audio1
+NextEpisodes: Episode2-Button1; Episode3-Button2
