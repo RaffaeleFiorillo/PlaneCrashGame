@@ -20,6 +20,7 @@ MonoBehaviour:
   nextEvent: 2
   direcao: 0
   variants:
-  - {fileID: 11400000, guid: c14c757e9e1618545a456d5a49ccb17e, type: 2}
+  - {fileID: 11400000, guid: f0c6f40971e0cca4dbac4ef5779d1b25, type: 2}
   - {fileID: 11400000, guid: 7b1725fc53d0d464eba0a94a5169d9cb, type: 2}
   timing: 50
+  times: 50

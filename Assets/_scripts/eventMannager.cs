@@ -14,7 +14,7 @@ public class eventMannager : MonoBehaviour
     oneWayEvent oneWayEv;
     spamBothB spamBothBEv;
     bips bipsEvent;
-
+    nextScene theEnd;
 
     void Start()
     {
@@ -25,6 +25,7 @@ public class eventMannager : MonoBehaviour
         oneWayEv = GetComponent<oneWayEvent>();
         spamBothBEv = GetComponent<spamBothB>();
         bipsEvent = GetComponent<bips>();
+        theEnd = GetComponent<nextScene>();
     }
 
 
@@ -62,6 +63,11 @@ public class eventMannager : MonoBehaviour
                 bipsEvent.receiver(theSound); 
                 
                 break;
+            case theEnum.End:
+                theEnd.receiving();
+
+
+                break;
         }
     }
 
@@ -91,7 +97,7 @@ public class eventMannager : MonoBehaviour
                 case theEnum .bipsEvent:
                 bipsEvent.deactivate();
                 break;
-
+           
 
 
 

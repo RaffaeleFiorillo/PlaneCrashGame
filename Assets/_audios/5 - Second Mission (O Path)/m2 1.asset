@@ -16,8 +16,10 @@ MonoBehaviour:
   notFollowAudio: {fileID: 8300000, guid: 24c84193cea476b4aa5be5e82bbf6c81, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
-  noEvent: 0
+  noEvent: 1
   nextEvent: 0
   direcao: 0
-  variants: []
-  timing: 0
+  variants:
+  - {fileID: 11400000, guid: da3134120a5f39a4f9f5f4f5cd3518c7, type: 2}
+  timing: 20
+  times: 50

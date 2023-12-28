@@ -54,6 +54,7 @@ public class oneWayEvent : MonoBehaviour
         timer = som.timing;
         direcao = som.direcao;
         eixo = 0;
+        eixoLength = som.times;
     }
 
 

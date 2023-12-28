@@ -53,6 +53,7 @@ public class spamBothB : MonoBehaviour
     {
         activating();
         timer = audio.timing;
+        timeToSpam = audio.times;
        
     }
 

@@ -12,5 +12,6 @@ namespace evenEnum
         oneWayBEvent,
         spamBothBEvent,
         bipsEvent,
+        End
     }
 }

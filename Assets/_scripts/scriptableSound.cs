@@ -26,4 +26,6 @@ public class scriptableSound : ScriptableObject
     [Space]
     [SerializeField]public List<scriptableSound> variants = new List<scriptableSound>();
     public float timing;
+
+    public float times;
 }

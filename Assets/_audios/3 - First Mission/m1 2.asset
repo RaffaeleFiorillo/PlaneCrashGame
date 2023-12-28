@@ -20,5 +20,6 @@ MonoBehaviour:
   nextEvent: 0
   direcao: 0
   variants:
-  - {fileID: 11400000, guid: abb77260ff2f9584ca50603faf5f22f8, type: 2}
+  - {fileID: 11400000, guid: eff4d5bcab925164e998d4e4d09c2f31, type: 2}
   timing: 0
+  times: 0

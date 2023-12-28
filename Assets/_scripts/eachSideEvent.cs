@@ -53,6 +53,9 @@ public class eachSideEvent : MonoBehaviour
         Actived = true;
         Timer = som.timing;
         eixo = 0;
+        eixoLength = Mathf.FloorToInt(som.times);
+
+
     }
     
 

@@ -20,8 +20,8 @@ public class bips : MonoBehaviour
     bool lastBip;
     bool spaming;
     float timeSpam;
-    [SerializeField] float timeToSpam;
-    [SerializeField] float timeSpaming;
+   
+
 
     [SerializeField] float timing;
 
@@ -72,7 +72,8 @@ public class bips : MonoBehaviour
         firstPress = false;
         firstPlay = false;
         timeSpam = 0f;
-        times = 5;
+        times = Mathf.FloorToInt(audio.times);
+
 
 
     }
@@ -103,15 +104,18 @@ public class bips : MonoBehaviour
 
 
             if (firstPress == false)
+            {
+
                 timeSpam = 0;
 
 
             firstPress = true;
+            }
 timeSpam += Time.deltaTime;
 
          
 
-                if (timeSpam >= 3)
+                if (timeSpam >timing)
                 {
                 if (!lastBip)
                 {
@@ -151,12 +155,17 @@ timeSpam += Time.deltaTime;
                         { 
                             
                             times--;
+
                             nextBip = 2f;
+                            if(times != 0)
+                            {
+
                         audioSource.resource = oneBip;
                         audioSource.Play();
+                            }
+                        
+                        
                             firstPress = false;
-                        
-                        
                         }
 
 
@@ -177,6 +186,9 @@ timeSpam += Time.deltaTime;
 
 
         }
+
+     
+
 
 
         

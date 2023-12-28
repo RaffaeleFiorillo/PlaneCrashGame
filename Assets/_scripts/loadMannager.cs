@@ -9,4 +9,15 @@ public class loadMannager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+
+    public void quitApp()
+    {
+
+
+Application.Quit();
+
+
+
+    }
 }

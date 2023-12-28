@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Events;
-using static UnityEditor.UIElements.ToolbarMenu;
+//using static UnityEditor.UIElements.ToolbarMenu;
 
 
 public class soundMannager : MonoBehaviour
@@ -52,6 +52,8 @@ public class soundMannager : MonoBehaviour
         {
             firstLoop = true;
             inputing = inputting.instance;
+            if(!nextSound.noEvent)
+            eventMannager.instance.activation(nextSound);
         }
 
         timer -= timerOn ? Time.deltaTime : 0;

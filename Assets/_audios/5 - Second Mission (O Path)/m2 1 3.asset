@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
   m_Name: m2 1 3
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 547d16ede1481a049890b453777a60e6, type: 3}
+  audio: {fileID: 8300000, guid: aa6fa79389e7c894eb30ef457700f6d9, type: 3}
   notFollowAudio: {fileID: 8300000, guid: 24c84193cea476b4aa5be5e82bbf6c81, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 0
-  nextEvent: 0
-  direcao: 0
-  variants: []
-  timing: 0
+  nextEvent: 3
+  direcao: 1
+  variants:
+  - {fileID: 11400000, guid: ffce933edbb3d42419f9dd4910efa313, type: 2}
+  - {fileID: 11400000, guid: e864bbfa98beee046b6a559be50b6f5d, type: 2}
+  timing: 20
+  times: 50
