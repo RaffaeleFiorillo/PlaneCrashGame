@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
+  m_Name: Tuto 2
+  m_EditorClassIdentifier: 
+  audio: {fileID: 8300000, guid: 66e393b0462d89247af67b027c1778dc, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: 240b674c93a5e3c4cba8f65c002fcada, type: 3}
+  doingGreat: {fileID: 0}
+  doingWrong: {fileID: 0}
+  noEvent: 1
+  nextEvent: 0
+  direcao: 0
+  variants:
+  - {fileID: 11400000, guid: d8e66b5723c803b4f8975ba1d487ee35, type: 2}
+  timing: 0

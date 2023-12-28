@@ -35,6 +35,10 @@ public class timerEvent : MonoBehaviour
     {
         eyeOpen = inputting.instance.closeOpenEye;
         if (eyeOpen) eyesClosed = !eyesClosed;
+
+
+
+        
     }
 
 
@@ -42,8 +46,10 @@ public class timerEvent : MonoBehaviour
     {
         theSound = sounding;
         timer = sounding.timing;
+        eyesClosed = false;
 
         activeBool = true;
+
     }
 
 
@@ -64,6 +70,7 @@ public class timerEvent : MonoBehaviour
         {
             activeBool = false;
             eventMannager.instance.receive(1);
+            soundMannager.Instance.firstClose = true;
         }
     }
 

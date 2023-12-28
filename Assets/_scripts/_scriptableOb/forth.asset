@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 75710cd20602d1a44afdbba9c03254f0, type: 3}
   notFollowAudio: {fileID: 0}
+  doingGreat: {fileID: 0}
+  doingWrong: {fileID: 0}
   noEvent: 0
   nextEvent: 0
-  timing: 0
+  direcao: 0
   variants: []
+  timing: 0

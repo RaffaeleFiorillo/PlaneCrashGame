@@ -15,7 +15,7 @@ public class soundMannager : MonoBehaviour
 
     [SerializeField] scriptableSound firstScriptableSound;
 
-    eventMannager eventing;
+
 
     scriptableSound nextSound;
     int nextAudio;
@@ -96,7 +96,7 @@ public class soundMannager : MonoBehaviour
             nextSound = nextSound.variants[0];
             soundSource.resource = nextSound.audio;
 
-            Debug.Log("calling");
+           // Debug.Log("calling");
             playSound();
             if (!nextSound.noEvent)
                 eventMannager.instance.activation(nextSound);
@@ -106,8 +106,15 @@ public class soundMannager : MonoBehaviour
 
     public void nextVariant(int variant)
     {
+        if(soundSource.isPlaying)
+        {
+            endSound();
+        }
+
+
         if (!soundSource.isPlaying) 
         {
+            Debug.Log("im alive");
             
                 nextSound = nextSound.variants[variant]; 
             
@@ -115,14 +122,14 @@ public class soundMannager : MonoBehaviour
             soundSource.resource = nextSound.audio;
 
             timer = soundSource.time;
-            Debug.Log("received");
+          //  Debug.Log("received");
 
             playSound();
 
             if (!nextSound.noEvent)
             {
                 eventMannager.instance.activation(nextSound);
-                Debug.Log("variating");
+              //  Debug.Log("variating");
             }
         }
     }
@@ -151,7 +158,7 @@ public class soundMannager : MonoBehaviour
             areOpened = false;
             soundSource.Stop();
 
-            nextSound = nextSound.variants[0];
+            //nextSound = nextSound.variants[0];
 
             soundSource.resource = nextSound.audio;
 

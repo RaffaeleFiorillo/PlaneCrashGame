@@ -12,6 +12,8 @@ public class eventMannager : MonoBehaviour
     twoButtonEvent twoButtonEv;
     eachSideEvent eachSideEv;
     oneWayEvent oneWayEv;
+    spamBothB spamBothBEv;
+    bips bipsEvent;
 
 
     void Start()
@@ -21,6 +23,8 @@ public class eventMannager : MonoBehaviour
         twoButtonEv = GetComponent<twoButtonEvent>();
         eachSideEv = GetComponent<eachSideEvent>();
         oneWayEv = GetComponent<oneWayEvent>();
+        spamBothBEv = GetComponent<spamBothB>();
+        bipsEvent = GetComponent<bips>();
     }
 
 
@@ -50,6 +54,14 @@ public class eventMannager : MonoBehaviour
             case theEnum.oneWayBEvent:
                 oneWayEv.receiver(theSound);
                 break;
+
+            case theEnum.spamBothBEvent:
+               spamBothBEv.receiver(theSound);
+                break;
+            case theEnum.bipsEvent:
+                bipsEvent.receiver(theSound); 
+                
+                break;
         }
     }
 
@@ -73,6 +85,18 @@ public class eventMannager : MonoBehaviour
             case theEnum.oneWayBEvent:
                 oneWayEv.deactivate();
                 break;
+            case theEnum.spamBothBEvent:
+                spamBothBEv.deactivate();
+                break;
+                case theEnum .bipsEvent:
+                bipsEvent.deactivate();
+                break;
+
+
+
+
+
+
         }
     }
 

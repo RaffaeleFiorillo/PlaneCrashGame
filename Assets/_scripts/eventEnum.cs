@@ -9,6 +9,8 @@ namespace evenEnum
         timer,
         twoButtonEven,
         eachSideBEvent,
-        oneWayBEvent
+        oneWayBEvent,
+        spamBothBEvent,
+        bipsEvent,
     }
 }
