@@ -12,6 +12,8 @@ public class timerEvent : MonoBehaviour
     bool eyeOpen;
     bool eyesClosed;
 
+    [SerializeField]  AudioSource mainAudio;
+
 
     void Start()
     {
@@ -27,6 +29,7 @@ public class timerEvent : MonoBehaviour
             active();
             // Debug.Log(timer);
             receiveInput();
+
         }
     }
 
@@ -47,27 +50,36 @@ public class timerEvent : MonoBehaviour
         theSound = sounding;
         timer = sounding.timing;
         eyesClosed = false;
-
+        
         activeBool = true;
+
 
     }
 
 
    public void active()
-    {
+    {if (!mainAudio.isPlaying)
+            {
+            if (timer >= 0)
+        {
+            timer -= Time.deltaTime;
+ }
+        else
+        {
+
         if (eyesClosed)
         {
+            
+
             eventMannager.instance.receive(0);
             activeBool = false;
             soundMannager.Instance.firstClose = true;
+
+            }
         }
 
-        if (timer >= 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        else
-        {
+        
+       
             activeBool = false;
             eventMannager.instance.receive(1);
             soundMannager.Instance.firstClose = true;

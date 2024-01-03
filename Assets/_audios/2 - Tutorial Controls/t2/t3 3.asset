@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: t3 3
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: 367884e9756a9e2479ce3ad282a13273, type: 3}
-  notFollowAudio: {fileID: 0}
+  notFollowAudio: {fileID: 8300000, guid: b7d4b9ad02dd4a547b81be667093b2b5, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 1
   nextEvent: 0
   direcao: 0
   variants:
-  - {fileID: 11400000, guid: 6565068d979ac4b46bdfa4c1a8dd7c29, type: 2}
+  - {fileID: 11400000, guid: 41b7941da01f9fa43a8ec46932a66146, type: 2}
   timing: 0
+  times: 0

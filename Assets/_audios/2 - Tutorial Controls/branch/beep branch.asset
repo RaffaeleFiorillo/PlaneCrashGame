@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
-  m_Name: Tuto1
+  m_Name: beep branch
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 09e607fb9141bfc42bdab469999e7bff, type: 3}
-  notFollowAudio: {fileID: 8300000, guid: 240b674c93a5e3c4cba8f65c002fcada, type: 3}
+  audio: {fileID: 8300000, guid: aa6fa79389e7c894eb30ef457700f6d9, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: b7d4b9ad02dd4a547b81be667093b2b5, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
-  noEvent: 0
+  noEvent: 1
   nextEvent: 0
   direcao: 0
   variants:
-  - {fileID: 11400000, guid: 448b46554e8bb144f98d0a3c8957f27b, type: 2}
-  - {fileID: 11400000, guid: fb7f7798d3848554b9cc82a0e75b651f, type: 2}
-  timing: 15
+  - {fileID: 11400000, guid: ad5d10481a82d414888b647c58d2ce4e, type: 2}
+  timing: 0
   times: 0
