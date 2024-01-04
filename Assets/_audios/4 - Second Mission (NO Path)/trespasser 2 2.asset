@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: trespasser 2 2
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: a72a857bc5023da498f7f67ef9064e69, type: 3}
-  notFollowAudio: {fileID: 0}
+  notFollowAudio: {fileID: 8300000, guid: 8528cc9403f15b045a2773123c692b07, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 1

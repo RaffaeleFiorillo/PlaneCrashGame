@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: trespace 1 1
   m_EditorClassIdentifier: 
   audio: {fileID: 8300000, guid: a72a857bc5023da498f7f67ef9064e69, type: 3}
-  notFollowAudio: {fileID: 0}
+  notFollowAudio: {fileID: 8300000, guid: 24c84193cea476b4aa5be5e82bbf6c81, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 1
@@ -22,3 +22,4 @@ MonoBehaviour:
   variants:
   - {fileID: 11400000, guid: a7b5defea6d74c841b50de6cd6a695b5, type: 2}
   timing: 0
+  times: 0

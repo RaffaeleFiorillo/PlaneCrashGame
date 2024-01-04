@@ -37,10 +37,10 @@ public class inputting : MonoBehaviour
 
         closeOpenEye = (Input.GetKeyDown(KeyCode.P)) ? true : false;
 
-        leftButton = Input.GetKey(KeyCode.A);
+        leftButton = Input.GetKey(KeyCode.LeftControl);
        // leftButton = Input.GetKeyUp(KeyCode.A);
 
-        rightButton = Input.GetKey(KeyCode.L);
+        rightButton = Input.GetKey(KeyCode.RightControl);
        // rightButton =Input.GetKeyUp(KeyCode.L);
 
 

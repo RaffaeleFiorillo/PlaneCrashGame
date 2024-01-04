@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
   m_Name: branch 1
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: a72a857bc5023da498f7f67ef9064e69, type: 3}
-  notFollowAudio: {fileID: 8300000, guid: b7d4b9ad02dd4a547b81be667093b2b5, type: 3}
+  audio: {fileID: 8300000, guid: aa6fa79389e7c894eb30ef457700f6d9, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: b222ec7b8ae2af14c97bbc9661b4ef42, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 0
@@ -23,4 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 53f973969fda2f34d9e8fb28d8472f59, type: 2}
   - {fileID: 11400000, guid: af1b25cfc9263d54eb29336be5a3308a, type: 2}
   timing: 10
-  times: 0
+  times: 10

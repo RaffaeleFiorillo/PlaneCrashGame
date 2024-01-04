@@ -37,6 +37,7 @@ public class eventMannager : MonoBehaviour
 
     public void activation(scriptableSound theSound)
     {
+        soundMannager.Instance.eventBool = true;
         switch (theSound.nextEvent)
         {
             case theEnum.timer:
@@ -74,6 +75,7 @@ public class eventMannager : MonoBehaviour
 
     public void deactivate(scriptableSound theSound)
     {
+        soundMannager.Instance.eventBool = false;
         switch (theSound.nextEvent)
         {
             case theEnum.timer:
@@ -110,5 +112,6 @@ public class eventMannager : MonoBehaviour
     public void receive(int variant)
     {
         soundMannager.Instance.nextVariant(variant);
+
     }
 }

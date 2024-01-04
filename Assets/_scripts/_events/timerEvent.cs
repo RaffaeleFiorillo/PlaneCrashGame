@@ -26,10 +26,12 @@ public class timerEvent : MonoBehaviour
     {
         if (activeBool)
         {
-            active();
-            // Debug.Log(timer);
-            receiveInput();
-
+            if (!mainAudio.isPlaying)
+            {
+                active();
+                // Debug.Log(timer);
+                receiveInput();
+            }
         }
     }
 
@@ -58,8 +60,7 @@ public class timerEvent : MonoBehaviour
 
 
    public void active()
-    {if (!mainAudio.isPlaying)
-            {
+    {
             if (timer >= 0)
         {
             timer -= Time.deltaTime;
@@ -76,14 +77,18 @@ public class timerEvent : MonoBehaviour
             soundMannager.Instance.firstClose = true;
 
             }
+            else
+            {
+
+            activeBool = false;
+            eventMannager.instance.receive(1);
+            soundMannager.Instance.firstClose = true;
+            }
         }
 
         
        
-            activeBool = false;
-            eventMannager.instance.receive(1);
-            soundMannager.Instance.firstClose = true;
-        }
+        
     }
 
 

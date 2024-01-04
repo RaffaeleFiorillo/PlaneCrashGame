@@ -12,7 +12,7 @@ public class bips : MonoBehaviour
    [SerializeField] AudioSource mainSource;
     AudioSource audioSource;
 
-    float nextBip = 2f;
+    float nextBip = 1.5f;
 
     bool firstLoop;
     bool activated;
@@ -156,7 +156,7 @@ timeSpam += Time.deltaTime;
                             
                             times--;
 
-                            nextBip = 2f;
+                            nextBip = 1.5f;
                             if(times != 0)
                             {
 

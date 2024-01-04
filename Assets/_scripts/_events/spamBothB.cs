@@ -72,7 +72,7 @@ public class spamBothB : MonoBehaviour
     {
 
 
-
+        
 
         timer -= Time.deltaTime;
 

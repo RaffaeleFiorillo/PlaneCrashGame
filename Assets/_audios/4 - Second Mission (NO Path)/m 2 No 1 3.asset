@@ -23,4 +23,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 505f3d41ac41fbf4fb15a798bce7bfae, type: 2}
   - {fileID: 11400000, guid: 18b4ed58c104ae749a8797ab9ec6dc3f, type: 2}
   timing: 20
-  times: 50
+  times: 25

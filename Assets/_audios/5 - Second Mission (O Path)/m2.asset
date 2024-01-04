@@ -21,5 +21,5 @@ MonoBehaviour:
   direcao: 0
   variants:
   - {fileID: 11400000, guid: 347bbb48384f42145a26160f80c75159, type: 2}
-  - {fileID: 11400000, guid: e864bbfa98beee046b6a559be50b6f5d, type: 2}
   timing: 0
+  times: 0

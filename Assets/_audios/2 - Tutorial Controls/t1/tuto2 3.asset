@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
   m_Name: tuto2 3
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 0289155c9eb5b8043968f808931c82ed, type: 3}
-  notFollowAudio: {fileID: 0}
+  audio: {fileID: 8300000, guid: b7d4b9ad02dd4a547b81be667093b2b5, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: 0289155c9eb5b8043968f808931c82ed, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 1
@@ -22,3 +22,4 @@ MonoBehaviour:
   variants:
   - {fileID: 11400000, guid: d8e66b5723c803b4f8975ba1d487ee35, type: 2}
   timing: 0
+  times: 0

@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
-  m_Name: tuto2 2
+  m_Name: t3 1 1
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: 3db017607b07c7948b90e7e79eab98b5, type: 3}
-  notFollowAudio: {fileID: 8300000, guid: 0289155c9eb5b8043968f808931c82ed, type: 3}
+  audio: {fileID: 8300000, guid: aa6fa79389e7c894eb30ef457700f6d9, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: 367884e9756a9e2479ce3ad282a13273, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
-  noEvent: 1
-  nextEvent: 0
+  noEvent: 0
+  nextEvent: 2
   direcao: 0
   variants:
-  - {fileID: 11400000, guid: 6565068d979ac4b46bdfa4c1a8dd7c29, type: 2}
-  timing: 0
-  times: 0
+  - {fileID: 11400000, guid: f0c6f40971e0cca4dbac4ef5779d1b25, type: 2}
+  - {fileID: 11400000, guid: 7b1725fc53d0d464eba0a94a5169d9cb, type: 2}
+  timing: 5
+  times: 10

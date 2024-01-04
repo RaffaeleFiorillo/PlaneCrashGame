@@ -17,7 +17,7 @@ public class soundMannager : MonoBehaviour
 
 
 
-    scriptableSound nextSound;
+   public scriptableSound nextSound;
     int nextAudio;
     float timer = 6;
     bool timerOn = false;
@@ -32,6 +32,9 @@ public class soundMannager : MonoBehaviour
     bool areOpened;
     public bool firstClose;
     AudioSource soundSource;
+
+
+  public  bool eventBool;
 
 
     private void Start()
@@ -62,6 +65,9 @@ public class soundMannager : MonoBehaviour
         {
             if (inputing.closeOpenEye) inputOpening = !inputOpening;
 
+           
+            
+            
             if (inputOpening)
             {
                 eyesOpen();
@@ -69,6 +75,8 @@ public class soundMannager : MonoBehaviour
             else
             {
                 eyesShut();
+
+                if(!eventBool)
                 passToNext();
             }
         }
@@ -108,6 +116,9 @@ public class soundMannager : MonoBehaviour
 
     public void nextVariant(int variant)
     {
+        eventBool = false;
+
+
         if(soundSource.isPlaying)
         {
             endSound();
@@ -149,7 +160,18 @@ public class soundMannager : MonoBehaviour
             soundSource.Play();
 
             eventMannager.instance.deactivate(nextSound);
+
+
+          
         }
+        if(inputOpening)
+  if (!soundSource.isPlaying)
+            {
+                inputOpening = false;
+
+
+            }
+
     }
 
 
@@ -158,19 +180,20 @@ public class soundMannager : MonoBehaviour
         if (areOpened)
         {
             areOpened = false;
-            soundSource.Stop();
+           // soundSource.Stop();
 
             //nextSound = nextSound.variants[0];
 
-            soundSource.resource = nextSound.audio;
+         //   soundSource.resource = nextSound.audio;
 
             if (!nextSound.noEvent)
             {
                 eventMannager.instance.activation(nextSound);
                 Debug.Log("variating");
+
             }
 
-            soundSource.Play();
+         //   soundSource.Play();
         }
     }
 

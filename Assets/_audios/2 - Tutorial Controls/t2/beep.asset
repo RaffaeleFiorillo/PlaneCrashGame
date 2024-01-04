@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b54d1df4ee247043909eb6fb07c49b7, type: 3}
   m_Name: beep
   m_EditorClassIdentifier: 
-  audio: {fileID: 8300000, guid: aa6fa79389e7c894eb30ef457700f6d9, type: 3}
-  notFollowAudio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 040b8038b43897d4bbf042cf282143c4, type: 3}
+  notFollowAudio: {fileID: 8300000, guid: 367884e9756a9e2479ce3ad282a13273, type: 3}
   doingGreat: {fileID: 0}
   doingWrong: {fileID: 0}
   noEvent: 1

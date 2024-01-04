@@ -10,6 +10,8 @@ public class twoButtonEvent : MonoBehaviour
     [SerializeField] float timePressing;
     [SerializeField] float pressingSpeed;
 
+[SerializeField]    AudioSource mainaudio;
+
     float timer;
     bool leftB;
     bool rightB;
@@ -23,12 +25,17 @@ public class twoButtonEvent : MonoBehaviour
         {
             input = inputting.instance;
             firstLoop = true;
+          
         }
 
         if (activated)
-        {
+        {if(!mainaudio.isPlaying)
+            {
+
             active();
             inputReceiver();
+
+            }
 
             //Debug.Log(leftB + " " + rightB);
         }
@@ -38,6 +45,7 @@ public class twoButtonEvent : MonoBehaviour
     public void receiver(scriptableSound audio)
     {
         timer = audio.timing;
+        timePressing = audio.times;
         activated = true;
     }
 
