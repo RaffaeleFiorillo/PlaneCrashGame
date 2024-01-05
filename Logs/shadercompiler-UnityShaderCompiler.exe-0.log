@@ -1,3 +1,4 @@
 Base path: 'P:/unity installer/2023.2.2f1/Editor/Data', plugins path 'P:/unity installer/2023.2.2f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 
+Cmd: shutdown
